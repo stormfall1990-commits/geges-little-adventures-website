@@ -144,28 +144,34 @@ section p {
 ======================================== */
 
 #start {
-    min-height: 620px;
+    min-height: 680px;
     display: flex;
     align-items: center;
     position: relative;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(15, 23, 18, 0.97) 0%,
+            rgba(15, 23, 18, 0.88) 38%,
+            rgba(15, 23, 18, 0.55) 65%,
+            rgba(15, 23, 18, 0.35) 100%
+        ),
+        url("hero-waldwelt.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 0 0 18px 18px;
 }
 
-#start::before {
-    content: "";
-    position: absolute;
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    background: rgba(79, 125, 87, 0.12);
-    filter: blur(70px);
-    top: 70px;
-    left: -120px;
-}
 
 .hero-inhalt {
     position: relative;
     z-index: 1;
     max-width: 850px;
+   padding: 40px 0;
 }
 
 .status {
@@ -309,7 +315,9 @@ footer a:hover {
     }
 
     #start {
-    min-height: 520px;
+    min-height: 560px;
+
+    background-position: 62% center;
 }
 
 #start h2 {
