@@ -385,6 +385,55 @@ footer a:hover {
     text-align: right;
 }
 
+/* ========================================
+   Bereich: Galerie
+======================================== */
+
+.galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galerie-karte {
+    overflow: hidden;
+    background-color: rgba(15, 23, 18, 0.55);
+    border: 1px solid var(--linie);
+    border-radius: 12px;
+}
+
+.galerie-platzhalter {
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79, 125, 87, 0.35),
+            rgba(15, 23, 18, 0.8)
+        );
+
+    border-bottom: 1px solid var(--linie);
+}
+
+.galerie-platzhalter span {
+    color: var(--gruen-hell);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.galerie-karte h3 {
+    margin: 22px 22px 10px;
+    color: var(--gruen-hell);
+}
+
+.galerie-karte p {
+    margin: 0 22px 24px;
+    color: var(--text-grau);
+}
 
 /* ========================================
    Handy / kleinere Bildschirme
@@ -458,6 +507,10 @@ footer a:hover {
 
 .fakt strong {
     text-align: left;
+}
+
+.galerie-grid {
+    grid-template-columns: 1fr;
 }
    
 #spiel,
