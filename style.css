@@ -105,16 +105,95 @@ section p {
    Startbereich
 ======================================== */
 
+/* ========================================
+   Startbereich / Hero
+======================================== */
+
 #start {
-    min-height: 420px;
+    min-height: 620px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#start::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(79, 125, 87, 0.12);
+    filter: blur(70px);
+    top: 70px;
+    left: -120px;
+}
+
+.hero-inhalt {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+}
+
+.status {
+    display: inline-block;
+    padding: 7px 14px;
+    margin-bottom: 18px;
+    border: 1px solid var(--gruen);
+    border-radius: 30px;
+    color: var(--gruen-hell);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 #start h2 {
-    font-size: 2.8rem;
-    max-width: 750px;
+    margin-bottom: 20px;
+    font-size: clamp(3rem, 7vw, 5.2rem);
+    line-height: 1.05;
+    color: var(--text);
+}
+
+.hero-text {
+    max-width: 720px;
+    font-size: 1.2rem;
+    color: var(--text-grau);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.button-haupt {
+    background-color: var(--gruen);
+    color: white;
+}
+
+.button-haupt:hover {
+    background-color: var(--gruen-hell);
+    color: var(--hintergrund);
+}
+
+.button-zweit {
+    border: 1px solid var(--linie);
+    color: var(--text);
+    background-color: var(--hintergrund-hell);
+}
+
+.button-zweit:hover {
+    border-color: var(--gruen-hell);
+    color: var(--gruen-hell);
 }
 
 
@@ -142,6 +221,27 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* ========================================
+   Inhaltsbereiche
+======================================== */
+
+#spiel,
+#gege,
+#dev-diary,
+#galerie {
+    margin: 35px 0;
+    padding: 45px;
+    background-color: var(--hintergrund-hell);
+    border: 1px solid var(--linie);
+    border-radius: 14px;
+}
+
+#spiel:hover,
+#gege:hover,
+#dev-diary:hover,
+#galerie:hover {
+    border-color: var(--gruen);
+}
 
 /* ========================================
    Handy / kleinere Bildschirme
@@ -170,11 +270,28 @@ footer a:hover {
     }
 
     #start {
-        min-height: 350px;
-    }
+    min-height: 520px;
+}
 
-    #start h2 {
-        font-size: 2rem;
-    }
+#start h2 {
+    font-size: 2.7rem;
+}
 
+.hero-text {
+    font-size: 1rem;
+}
+
+.hero-buttons {
+    flex-direction: column;
+}
+
+.button {
+    text-align: center;
+}
+
+#spiel,
+#gege,
+#dev-diary,
+#galerie {
+    padding: 28px;
 }
