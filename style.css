@@ -1,0 +1,180 @@
+/* ========================================
+   Grundfarben
+======================================== */
+
+:root {
+    --hintergrund: #0f1712;
+    --hintergrund-hell: #17231b;
+    --gruen-dunkel: #1d3a2a;
+    --gruen: #4f7d57;
+    --gruen-hell: #8fb996;
+    --text: #f1f4ef;
+    --text-grau: #c5cec6;
+    --linie: #2d4735;
+}
+
+
+/* ========================================
+   Grundlayout
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--hintergrund);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   Kopfbereich
+======================================== */
+
+header {
+    background-color: var(--hintergrund-hell);
+    border-bottom: 1px solid var(--linie);
+    padding: 24px 8%;
+}
+
+header h1 {
+    margin: 0 0 18px 0;
+    color: var(--gruen-hell);
+    font-size: 2rem;
+}
+
+
+/* ========================================
+   Navigation
+======================================== */
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--gruen-hell);
+}
+
+
+/* ========================================
+   Hauptinhalt
+======================================== */
+
+main {
+    width: min(1100px, 88%);
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 0;
+    border-bottom: 1px solid var(--linie);
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--gruen-hell);
+    font-size: 2rem;
+}
+
+section p {
+    max-width: 800px;
+    color: var(--text-grau);
+    font-size: 1.05rem;
+}
+
+
+/* ========================================
+   Startbereich
+======================================== */
+
+#start {
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#start h2 {
+    font-size: 2.8rem;
+    max-width: 750px;
+}
+
+
+/* ========================================
+   Footer
+======================================== */
+
+footer {
+    padding: 35px 8%;
+    background-color: var(--hintergrund-hell);
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-grau);
+}
+
+footer a {
+    color: var(--gruen-hell);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   Handy / kleinere Bildschirme
+======================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 6%;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    main {
+        width: 88%;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    #start {
+        min-height: 350px;
+    }
+
+    #start h2 {
+        font-size: 2rem;
+    }
+
+}
