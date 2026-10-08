@@ -510,6 +510,47 @@ footer a:hover {
 
 
 /* ========================================
+   Rechtliche Unterseiten
+======================================== */
+
+.recht-seite {
+    width: min(900px, 88%);
+    margin: 0 auto;
+}
+
+.recht-inhalt {
+    padding: 70px 0;
+}
+
+.recht-inhalt h2 {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: var(--text);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+.recht-inhalt h3 {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: var(--gruen-hell);
+    font-size: 1.3rem;
+}
+
+.recht-inhalt p {
+    max-width: 780px;
+    color: var(--text-grau);
+    line-height: 1.8;
+}
+
+.recht-inhalt a {
+    color: var(--gruen-hell);
+}
+
+.recht-inhalt a:hover {
+    color: var(--text);
+}
+
+/* ========================================
    Handy / kleinere Bildschirme
 ======================================== */
 
@@ -593,6 +634,10 @@ footer a:hover {
 
 .vergleich-bild img {
     height: auto;
+}
+
+.recht-inhalt {
+    padding: 50px 0;
 }
    
 #spiel,
