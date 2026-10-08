@@ -284,6 +284,55 @@ footer a:hover {
 }
 
 /* ========================================
+   Bereich: Das Spiel
+======================================== */
+
+.bereich-kopf {
+    max-width: 780px;
+    margin-bottom: 35px;
+}
+
+.bereich-label {
+    margin: 0 0 8px 0;
+    color: var(--gruen-hell);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.bereich-einleitung {
+    font-size: 1.1rem;
+    color: var(--text-grau);
+}
+
+.spiel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-karte {
+    padding: 28px;
+    background-color: rgba(15, 23, 18, 0.55);
+    border: 1px solid var(--linie);
+    border-radius: 12px;
+}
+
+.info-karte h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--gruen-hell);
+    font-size: 1.2rem;
+}
+
+.info-karte p {
+    margin-bottom: 0;
+    color: var(--text-grau);
+    font-size: 0.98rem;
+}
+
+/* ========================================
    Handy / kleinere Bildschirme
 ======================================== */
 
@@ -335,7 +384,16 @@ footer a:hover {
 .button {
     text-align: center;
 }
+   
+.spiel-grid {
+    grid-template-columns: 1fr;
+}
 
+.info-karte {
+    padding: 22px;
+}
+   
+   
 #spiel,
 #gege,
 #dev-diary,
