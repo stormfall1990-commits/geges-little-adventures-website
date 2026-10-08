@@ -333,6 +333,60 @@ footer a:hover {
 }
 
 /* ========================================
+   Bereich: Gege
+======================================== */
+
+.gege-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.gege-text {
+    padding: 28px;
+    background-color: rgba(15, 23, 18, 0.45);
+    border: 1px solid var(--linie);
+    border-radius: 12px;
+}
+
+.gege-text h3 {
+    margin-top: 0;
+    color: var(--gruen-hell);
+    font-size: 1.3rem;
+}
+
+.gege-text p {
+    color: var(--text-grau);
+}
+
+.gege-fakten {
+    display: grid;
+    gap: 14px;
+}
+
+.fakt {
+    padding: 18px 20px;
+    background-color: rgba(15, 23, 18, 0.55);
+    border: 1px solid var(--linie);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fakt span {
+    color: var(--text-grau);
+}
+
+.fakt strong {
+    color: var(--gruen-hell);
+    text-align: right;
+}
+
+
+/* ========================================
    Handy / kleinere Bildschirme
 ======================================== */
 
@@ -393,6 +447,18 @@ footer a:hover {
     padding: 22px;
 }
    
+.gege-grid {
+    grid-template-columns: 1fr;
+}
+
+.fakt {
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fakt strong {
+    text-align: left;
+}
    
 #spiel,
 #gege,
