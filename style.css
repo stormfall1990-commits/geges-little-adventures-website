@@ -402,27 +402,15 @@ footer a:hover {
     border-radius: 12px;
 }
 
-.galerie-platzhalter {
-    height: 190px;
+.galerie-bild {
+    display: block;
+    width: 100%;
+    height: 220px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(79, 125, 87, 0.35),
-            rgba(15, 23, 18, 0.8)
-        );
+    object-fit: cover;
+    object-position: center;
 
     border-bottom: 1px solid var(--linie);
-}
-
-.galerie-platzhalter span {
-    color: var(--gruen-hell);
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .galerie-karte h3 {
