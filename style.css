@@ -539,6 +539,42 @@ footer a:hover {
 }
 
 /* ========================================
+   404-Seite
+======================================== */
+
+.fehler-seite {
+    width: min(900px, 88%);
+    margin: 0 auto;
+}
+
+.fehler-inhalt {
+    min-height: 65vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fehler-inhalt h2 {
+    margin: 10px 0 20px;
+    color: var(--text);
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    line-height: 1.05;
+}
+
+.fehler-inhalt p {
+    max-width: 650px;
+    color: var(--text-grau);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.fehler-inhalt .button {
+    margin-top: 20px;
+}
+
+/* ========================================
    Handy / kleinere Bildschirme
 ======================================== */
 
