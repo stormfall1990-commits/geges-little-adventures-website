@@ -89,6 +89,366 @@
 
     <main class="devblog-seite">
 
+                <article class="devblog-beitrag">
+
+            <div class="dev-meta">
+                <span>Dev Blog #2</span>
+                <span>Oktober 2026</span>
+            </div>
+
+            <h2>Sammeln, Inventar und die ersten Quests</h2>
+
+            <p class="devblog-einleitung">
+                Nachdem unsere erste kleine Waldwelt entstanden war und wir endlich darin
+                herumlaufen konnten, stellte sich ziemlich schnell die nächste Frage:
+                Was macht man eigentlich in diesem Wald?
+            </p>
+
+            <p>
+                Nur zwischen Bäumen herumzulaufen ist zwar überraschend entspannend,
+                aber als langfristiges Spielkonzept vielleicht ein bisschen dünn.
+                Also brauchte die Waldwelt etwas zu tun.
+            </p>
+
+            <p>
+                Und damit begann die Phase, in der aus unserer Testwelt langsam
+                tatsächlich ein Spiel wurde.
+            </p>
+
+
+            <section class="entwicklung-vergleich">
+
+                <h3>Ein Baum ist nicht mehr nur ein Baum</h3>
+
+                <p>
+                    Am Anfang standen die Bäume einfach herum. Sie sahen nett aus,
+                    spendeten Schatten – und damit war ihre Karriere zunächst auch
+                    schon beendet.
+                </p>
+
+                <p>
+                    Das sollte sich ändern. Unsere ersten Ressourcen wurden
+                    <strong>Holz und Stein</strong>. Bäume konnten nun tatsächlich
+                    abgeerntet werden und lieferten Holz. Steine wurden ebenfalls
+                    zu interaktiven Objekten.
+                </p>
+
+                <p>
+                    Dabei wollten wir nicht einfach nur ein Objekt anklicken und es
+                    sofort verschwinden lassen. Bäume lieferten mehrere Einheiten Holz,
+                    ihre Baumkrone reagierte auf den Abbau und nach einiger Zeit konnten
+                    die Ressourcen wieder erscheinen.
+                </p>
+
+                <p>
+                    Plötzlich reagierte die Welt auf das, was der Spieler tat.
+                    Und aus einem Baum wurde endlich mehr als Dekoration:
+                    ein Rohstofflieferant. Seine Zustimmung dazu haben wir allerdings
+                    nie eingeholt.
+                </p>
+
+                <div class="vergleich-grid">
+
+                    <figure class="vergleich-bild">
+                        <img
+                            src="images/devblog/02/erste_schritte.png"
+                            alt="Frühe Version der Waldwelt mit dem ersten Spielercharakter, Baum und einfachen Rohstoffobjekten"
+                        >
+                        <figcaption>
+                            Ganz am Anfang: Spieler, Baum und erste Testobjekte.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="vergleich-bild">
+                        <img
+                            src="images/devblog/02/ressourcen_hud.png"
+                            alt="Frühe Waldwelt mit den Anzeigen für Münzen, Holz und Stein"
+                        >
+                        <figcaption>
+                            Das erste Ressourcen-HUD mit Münzen, Holz und Stein.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <section class="entwicklung-vergleich">
+
+                <h3>Jetzt haben wir Holz. Aber wie viel?</h3>
+
+                <p>
+                    Mit den ersten Rohstoffen entstand sofort das nächste Problem:
+                    Woher weiß der Spieler eigentlich, was er gesammelt hat?
+                </p>
+
+                <p>
+                    Also bekam unsere Waldwelt ihr erstes richtiges HUD. Zunächst gab
+                    es nur die Münzen. Danach kamen Holz und Stein dazu.
+                </p>
+
+                <p>
+                    Auf einmal konnte man direkt sehen, dass das Sammeln tatsächlich
+                    funktionierte. Aus „Ich habe gerade auf diesen Stein gedrückt“
+                    wurde plötzlich: <strong>„Ich besitze jetzt tatsächlich einen Stein.“</strong>
+                </p>
+
+                <p>
+                    Fortschritt!
+                </p>
+
+                <div class="vergleich-grid">
+
+                    <figure class="vergleich-bild">
+                        <img
+                            src="images/devblog/02/stein_sammeln.png"
+                            alt="Spieler beim Sammeln eines Steins mit sichtbarem Holz- und Steinbestand im HUD"
+                        >
+                        <figcaption>
+                            Holz 3, Stein 2 – das Sammelsystem funktioniert.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <section class="entwicklung-vergleich">
+
+                <h3>Sammeln allein reicht aber nicht</h3>
+
+                <p>
+                    Nachdem das Sammeln funktionierte, tauchte ziemlich schnell die
+                    nächste Frage auf:
+                    <strong>Warum sammle ich das alles eigentlich?</strong>
+                </p>
+
+                <p>
+                    Die Antwort war unser erstes kleines Quest-System.
+                </p>
+
+                <p>
+                    Die erste Aufgabe war noch angenehm überschaubar:
+                    <strong>Sammle 3 Holz und 2 Stein.</strong>
+                </p>
+
+                <p>
+                    Keine uralte Prophezeiung. Kein Dämonenkönig.
+                    Keine Rettung der Welt.
+                </p>
+
+                <p>
+                    Drei Holz. Zwei Steine.
+                    Auch Helden müssen irgendwo anfangen.
+                </p>
+
+                <p>
+                    Die Questanzeige bekam einen eigenen Bereich im HUD und konnte
+                    während des Sammelns den aktuellen Fortschritt anzeigen.
+                </p>
+
+                <div class="vergleich-grid">
+
+                    <figure class="vergleich-bild">
+                        <img
+                            src="images/devblog/02/erste_quest.png"
+                            alt="Entwurf des HUD mit der ersten Aufgabe Sammle 3 Holz und 2 Stein"
+                        >
+                        <figcaption>
+                            Die erste Sammelquest nimmt im HUD Gestalt an.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <section class="entwicklung-vergleich">
+
+                <h3>Das erste Inventar</h3>
+
+                <p>
+                    Als Nächstes wollten wir die gesammelten Gegenstände nicht dauerhaft
+                    nur als Zahlen am Bildschirmrand darstellen.
+                </p>
+
+                <p>
+                    Also entstand das erste Inventar.
+                </p>
+
+                <p>
+                    Zunächst war es noch sehr einfach aufgebaut: ein kleines Fenster
+                    und einige Slots. Aber schon dieser erste Prototyp legte eine
+                    wichtige Grundlage für das spätere Spiel.
+                </p>
+
+                <p>
+                    Gegenstände sollten nicht einfach irgendwo als Zahl gespeichert
+                    werden. Der Spieler sollte sie tatsächlich
+                    <strong>besitzen und sehen können.</strong>
+                </p>
+
+                <div class="vergleich-grid">
+
+                    <figure class="vergleich-bild">
+                        <img
+                            src="images/devblog/02/inventar_aufbau.png"
+                            alt="Früher Aufbau des Inventars mit mehreren leeren Inventarslots"
+                        >
+                        <figcaption>
+                            Der erste Inventar-Prototyp: noch leer, aber die Grundlage steht.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="vergleich-bild">
+                        <img
+                            src="images/devblog/02/inventar_quest.png"
+                            alt="Geöffnetes Inventar mit gesammeltem Holz und gleichzeitig sichtbarem Questfortschritt"
+                        >
+                        <figcaption>
+                            Inventar und Quest arbeiten erstmals zusammen.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <section class="entwicklung-vergleich">
+
+                <h3>Wenn plötzlich mehrere Systeme miteinander sprechen</h3>
+
+                <p>
+                    Der eigentlich spannende Moment kam aber erst danach.
+                </p>
+
+                <p>
+                    Sammeln funktionierte. Das HUD funktionierte.
+                    Das Inventar funktionierte. Und das Quest-System funktionierte.
+                </p>
+
+                <p>
+                    Jetzt mussten diese Dinge miteinander verbunden werden.
+                </p>
+
+                <p>
+                    Der Spieler sammelte Holz oder Stein. Der Bestand wurde aktualisiert,
+                    das Inventar zeigte die Gegenstände und gleichzeitig überprüfte
+                    die aktive Aufgabe, ob bereits genug davon gesammelt worden war.
+                </p>
+
+                <p>
+                    Und natürlich sammelten wir beim Testen irgendwann drei Steine,
+                    obwohl nur zwei verlangt wurden.
+                </p>
+
+                <p>
+                    Gege war zu diesem Zeitpunkt zwar noch gar nicht Gege – aber offenbar
+                    galt schon damals:
+                    <strong>Lieber einen Stein zu viel mitbringen. Sicher ist sicher.</strong>
+                </p>
+
+            </section>
+
+
+            <section class="entwicklung-vergleich">
+
+                <h3>Ein richtiges Questbrett muss natürlich auch sein</h3>
+
+                <p>
+                    Eine dauerhaft eingeblendete Aufgabe war für den Anfang praktisch.
+                    Langfristig wollten wir Quests aber nicht einfach irgendwo erscheinen
+                    lassen.
+                </p>
+
+                <p>
+                    Also entstand ein richtiges <strong>Questbrett</strong>.
+                </p>
+
+                <p>
+                    Natürlich hätte auch ein einfacher Knopf gereicht.
+                    Aber wo wäre da der Spaß?
+                </p>
+
+                <p>
+                    Das Brett bekam einen Holzrahmen, mehrere angeheftete Zettel und
+                    sollte später als zentrale Stelle für neue Aufträge dienen.
+                </p>
+
+                <div class="vergleich-grid">
+
+                    <figure class="vergleich-bild">
+                        <img
+                            src="images/devblog/02/questbrett.png"
+                            alt="Erstes dreidimensionales Questbrett mit Holzrahmen und drei angehefteten Questzetteln"
+                        >
+                        <figcaption>
+                            Das erste Questbrett – bereit für zukünftige Aufträge.
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <section class="entwicklung-vergleich">
+
+                <h3>Aus Holz und Stein wird langsam ein Spiel</h3>
+
+                <p>
+                    Rückblickend waren Holz, Stein, ein kleines Inventar und eine Aufgabe
+                    natürlich noch keine riesigen Spielsysteme.
+                </p>
+
+                <p>
+                    Aber diese Entwicklungsphase war enorm wichtig.
+                    Zum ersten Mal hatten wir eine richtige Gameplay-Schleife:
+                </p>
+
+                <p>
+                    <strong>
+                        Erkunden → Ressourcen finden → sammeln → Inventar füllen →
+                        Aufgabe erfüllen → Fortschritt bekommen
+                    </strong>
+                </p>
+
+                <p>
+                    Und damit bekam unsere Waldwelt langsam einen Zweck.
+                </p>
+
+                <p>
+                    Natürlich dauerte es nicht lange, bis die nächsten Fragen kamen:
+                    Was passiert mit dem ganzen Holz? Können wir Werkzeuge herstellen?
+                    Brauchen wir verschiedene Holzarten?
+                </p>
+
+                <p>
+                    Und wenn wir schon Steine abbauen können …
+                    <strong>warum eigentlich nicht auch Kupfer?</strong>
+                </p>
+
+                <p>
+                    Diese Frage führte uns direkt zur nächsten großen Entwicklungsphase.
+                </p>
+
+                <p>
+                    <strong>
+                        Im nächsten Dev Blog: Crafting, Schmiede, neue Rohstoffe –
+                        und der Moment, in dem aus ein bisschen Holz und Stein plötzlich
+                        Werkzeuge und Baupläne wurden.
+                    </strong>
+                </p>
+
+            </section>
+
+        </article>
+
+        
         <article class="devblog-beitrag">
 
             <div class="dev-meta">
